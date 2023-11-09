@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.main-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../../images/image-red/pexels-engin-akyurt-3219549.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+
+.wrap {
+    display: flex;
+}
+
+
+
+.txt {
+    position: relative;
+    color: #f8f8f8;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: poppins,sans-serif;
+    text-align: center;
+    overflow: visible;
+}
+
+
+.second-txt::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #f8f8f8;
+}
+
+.first-txt {
+    display: inline;
+}
+
+
+.custom-btn {
+    border: none;
+    background-color: #F05F40;
+    color: white;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+    .custom-btn:hover {
+        cursor: pointer;
+        background-color: white;
+        color: #F05F40;
+        border-radius: 300px;
+    }
+
+@media (max-width:1000px) {
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .txt {
+        font-size: 3vh;
+    }
+}
+
+.serviceName, .productName, .clientName {
+    margin-top: 3%;
+    text-align: center;
+}
+.line
+{
+    height:3px;
+    width:3%;
+    margin:auto;
+    background-color:grey;
+}
+.custom-icon {
+    font-size: 3em;
+    padding-top: 15px;
+    color: #ff4d00;
+    
+}
+
+.info-box {
+    height: 69%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 45%;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+
+@media (max-width:600px) {
+    .services{
+        flex-direction: column;
+    }
+
+    .info-box
+    {
+        width: 100%;
+    }
+}
+.infopara {
+    padding: 0 18% 0 18%;
+    text-align: center;
+}
+.quote-section {
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("https://logiclabsoftware.com/img/design.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.heading {
+    padding: 0 15% 0 15%;
+    line-height: 35px;
+    color: white;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+}
+.client-section
+{
+    background-color:#f4f4f4;
+    height:500px;
+    font-family:poppins, sans-serif;
+}
